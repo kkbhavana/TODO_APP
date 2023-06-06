@@ -1,0 +1,7 @@
+.task-items-wrapper tr,td,th{
+border:1px solid black;
+text-align:center;
+}
+table {
+  border-collapse: collapse;
+}
