@@ -9,8 +9,8 @@
 <form method="post" action="">
     <h1>Task:{{task}}</h1>
     {% if task.completed %} Completed {% else %} Pending {% endif %}
-    <a href="{% url 'task'%}">Back</a>
-</form>
 
+</form>
+<a href="{% url 'task'%}">Back</a>
 </body>
 </html>

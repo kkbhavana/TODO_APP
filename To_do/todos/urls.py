@@ -9,8 +9,8 @@ urlpatterns = [
     path('register/',RegisterView.as_view(),name='register'),
     path('', TaskList.as_view(), name='task'),
     path('create/',TaskCreate.as_view(),name='task-create'),
-    path('update/<int:pk>',TaskUpdate.as_view(),name='task-update'),
-    path('delete/<int:pk>',TaskDelete.as_view(),name='task-delete'),
-    path('details/<int:pk>', TaskDetailView.as_view(), name='task-details'),
+    path('update/<int:pk>/',TaskUpdate.as_view(),name='task-update'),
+    path('delete/<int:pk>/',TaskDelete.as_view(),name='task-delete'),
+    path('details/<int:pk>/', TaskDetailView.as_view(), name='task-details'),
 
 ]
