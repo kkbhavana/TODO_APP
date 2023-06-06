@@ -4,22 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="{% static 'list_style.css' %}">
+    <link rel="stylesheet" href="{% static 'liststyle.css' %}">
 </head>
 <body>
-
+<div class="container">
     <h1>Task List</h1>
 
     <div class="header-box">
 
-        <h1>Hello,{{user.username | title}}</h1>
-
- <a href="{% url 'task-create' %}">Add Task</a>
+        <h2>Hello... {{user.username | title}}</h2>
+<div class="create">
+ <a  href="{% url 'task-create' %}">Add Task</a>
+  </div>
         <table>
 
 
                 <tr>
-                    <th>ID</th>
+                    <th style="height:35px;">ID</th>
                     <th>TASK</th>
                     <th>DESCRIPTION</th>
                     <th>STATUS</th>
@@ -37,9 +38,9 @@
                     <td style="width:250px;height:50px;">{{tasks.created}}</td>
 
 
-                    <td style="width:50px;height:50px;"><a href="{% url 'task-update' tasks.id %}">Task Update</a></td>
-                    <td style="width:50px;height:50px;"><a href="{% url 'task-delete' tasks.id %}">Task Delete</a></td>
-                    <td style="width:50px;height:50px;"><a href="{% url 'task-details' tasks.id %}">Detail View</a></td>
+                    <td style="width:100px;height:50px;"><a href="{% url 'task-update' tasks.id %}">Task Update</a></td>
+                    <td style="width:100px;height:50px;"><a href="{% url 'task-delete' tasks.id %}">Task Delete</a></td>
+                    <td style="width:100px;height:50px;"><a href="{% url 'task-details' tasks.id %}">Detail View</a></td>
                 </tr>
                 {% endfor %}
 
@@ -54,6 +55,6 @@
         {% endif %}
  </div>
     </div>
-
+</div>
 </body>
 </html>
