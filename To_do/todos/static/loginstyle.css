@@ -1,6 +1,6 @@
 body{
 height:100vh;
-background-image: url("loginimage.jpeg");
+background-image:url("login-image.jpeg");
 background-size: cover;
 display:flex;
 justify-content:center;
