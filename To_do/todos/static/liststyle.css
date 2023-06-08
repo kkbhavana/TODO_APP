@@ -1,26 +1,31 @@
-.task-items-wrapper tr,td,th{
-border:1px solid black;
+body{
+height:100vh;
+background-image:url('login-image.jpeg');
+background-size:cover;
 text-align:center;
+color:#035454;
+font-family: 'Times New Roman', serif;
+}
+
+.task-items-wrapper tr,td,th{
+border:1.5px solid #85cccc;
+text-align:center;
+color:black;
 }
 table {
   border-collapse: collapse;
-  margin:50px 40px;
-}
-.task-items-wrapper,
-h2,h1,
-.create
-{
-text-align:center;
+  margin:40px 170px;
 }
 
+.create,
+.task-items-wrapper a{
+color:#035454;
+text-decoration:none;
+display:inline-block;
+background-color:#12b8b8;
+padding:10px;
+}
 
-.create a:link,
-.task-items-wrapper a:link
-{
-background-color: #f44336;
- color: white;
- padding: 14px 25px;
- text-align: center;
- text-decoration: none;
- display: inline-block;
+td i{
+color:#035454;
 }

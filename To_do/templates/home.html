@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <link rel="stylesheet" href="{% static 'home.css'%}">
+</head>
+<body>
+<div class="container">
+    <h1>ToDo</h1>
+    <ul>
+
+        <li><a href="{% url 'login' %}">Sign in</a></li>
+        <li><a href="{% url 'register' %}">Sign up</a></li>
+    </ul>
+</div>
+</body>
+</html>

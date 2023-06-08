@@ -1,11 +1,14 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
+    <link rel="stylesheet" href="{% static 'register.css'%}">
 </head>
 <body>
-<h1>Register Here</h1>
+<div class="container">
+<h1>Sign up</h1>
 <div class="card-body">
     <form method="post">
         {% csrf_token %}
@@ -17,11 +20,11 @@
 
         <label>{{form.password2.label}}</label>
         {{form.password2}}
-
         <input class="button" type="submit" value="Register">
     </form>
+
     <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
 </div>
-
+</div>
 </body>
 </html>

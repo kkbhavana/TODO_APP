@@ -6,20 +6,12 @@ display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-}
-.login_card{
 color:#035454;
-border:3px solid #85cccc;
-padding:30px;
-}
-input{
-background-color:#ebf7f7;
-border:none;
-padding:7px;
-font-size:16px;
 }
 .button{
 background-color:#12b8b8;
 color:#035454;
 padding: 10px;
+border:none;
+
 }
