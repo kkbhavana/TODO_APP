@@ -3,17 +3,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'home.css'%}">
+    <title>Home page</title>
+
 </head>
 <body>
-<div class="container">
+<nav>
     <h1>ToDo</h1>
     <ul>
 
         <li><a href="{% url 'login' %}">Sign in</a></li>
         <li><a href="{% url 'register' %}">Sign up</a></li>
     </ul>
-</div>
+    </nav>
+    <div class="card-body" style="width:15rem">
+        <p><i>If you want something you have never had,you must be willing to do something you have never done.</i></p>
+    </div>
+
 </body>
 </html>

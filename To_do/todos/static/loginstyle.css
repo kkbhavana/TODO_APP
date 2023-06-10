@@ -1,3 +1,11 @@
+*{
+ margin: 0;
+ padding: 0;
+ outline: none;
+ box-sizing: border-box;
+}
+
+
 body{
 height:100vh;
 background-image:url('login-image.jpeg');
@@ -5,21 +13,32 @@ background-size:cover;
 display:flex;
 justify-content:center;
 align-items:center;
-text-align:center;
+color:#035454;
 }
-.login_card{
+.container{
+width:100%;
+max-width:350px;
 color:#035454;
 border:3px solid #85cccc;
+text-align:center;
 padding:30px;
+line-height:30px;
 }
-input{
+h1{
+margin-bottom:25px;
+}
+
+.container input{
 background-color:#ebf7f7;
 border:none;
 padding:7px;
 font-size:16px;
+margin-bottom:10px;
 }
-.button{
+.card-body .button{
 background-color:#12b8b8;
 color:#035454;
 padding: 10px;
+border:none;
+margin:20px;
 }

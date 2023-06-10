@@ -1,10 +1,22 @@
+*{
+ margin: 0;
+ padding: 0;
+ outline: none;
+ box-sizing: border-box;
+}
+
 body{
 height:100vh;
 background-image:url('login-image.jpeg');
 background-size:cover;
+display:block;
+align-items:center;
+justify-content:center;
 text-align:center;
 color:#035454;
 font-family: 'Times New Roman', serif;
+margin:70px 10px;
+line-height:50px;
 }
 
 .task-items-wrapper tr,td,th{
@@ -12,20 +24,30 @@ border:1.5px solid #85cccc;
 text-align:center;
 color:black;
 }
-table {
-  border-collapse: collapse;
-  margin:40px 170px;
+.center {
+ border-collapse: collapse;
+ align-items:center;
+ margin-left: auto;
+  margin-right: auto;
+  margin-top:20px;
+  margin-bottom:20px;
+
 }
 
-.create,
-.task-items-wrapper a{
-color:#035454;
-text-decoration:none;
+.center a{
 display:inline-block;
 background-color:#12b8b8;
-padding:10px;
+color:#035454;
+padding:0px 15px;
+margin:5px;
 }
 
-td i{
+.button{
+background-color:#12b8b8;
 color:#035454;
+padding: 10px ;
+border:none;
+margin:10px 70px;
+text-decoration:none;
+
 }

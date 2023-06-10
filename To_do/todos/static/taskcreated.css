@@ -9,6 +9,8 @@ font-family: 'Times New Roman', serif;
 }
 
 .container{
+max-width:500px;
+width:100%;
 border:3px solid #85cccc;
 padding:30px;
 color:#035454;
@@ -21,6 +23,7 @@ background-color:#ebf7f7;
 border:none;
 padding:7px;
 font-size:17px;
+font-family: 'Times New Roman', serif;
 }
 .button,
 .back-button{

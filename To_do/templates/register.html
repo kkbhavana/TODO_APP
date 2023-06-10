@@ -3,8 +3,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="{% static 'register.css' %}">
     <title>Register</title>
-    <link rel="stylesheet" href="{% static 'register.css'%}">
+
 </head>
 <body>
 <div class="container">
@@ -12,15 +14,17 @@
 <div class="card-body">
     <form method="post">
         {% csrf_token %}
-        <label>{{form.username.label}}</label>
-        {{form.username}}
+       <ul> <li><label>{{form.username.label}}</label>
+        {{form.username}}</li>
 
-        <label>{{form.password1.label}}</label>
-        {{form.password1}}
+       <li><label>{{form.password1.label}}</label>
+        {{form.password1}}</li>
 
-        <label>{{form.password2.label}}</label>
-        {{form.password2}}
+       <li><label>{{form.password2.label}}</label>
+        {{form.password2}}</li>
+        </ul>
         <input class="button" type="submit" value="Register">
+
     </form>
 
     <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
