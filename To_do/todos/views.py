@@ -2,6 +2,8 @@ from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView
+from django.core.mail import send_mail
+from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView, DetailView, FormView
@@ -10,6 +12,15 @@ from .models import Task
 
 
 # Create your views here.
+
+
+def send_test_email(request):
+    subject = 'hi welcome to Django email configuration session'
+    message = 'This is test email sent using django'
+    from_email = 'kkbhavana6@gmail.com'
+    recipient_list = ['bhavanababukk@gmail.com']
+    send_mail(subject,message,from_email,recipient_list)
+    return HttpResponse('Test mail sent successfully...!')
 class CustomLoginView(LoginView):
     template_name = 'login.html'
     fields = '__all__'
